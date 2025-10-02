@@ -1,4 +1,4 @@
-# Génération de Scénarios de Taux d’Intérêt avec IA Générative
+# Génération de Scénarios Economiques avec IA Générative
 
 ## 📌 Contexte
 Ce projet a été réalisé dans le cadre d'un projet de recherche à l’ENSAE sur l'année 2024-2025 en collaboration avec WTW.  
