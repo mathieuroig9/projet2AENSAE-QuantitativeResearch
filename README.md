@@ -16,7 +16,7 @@ Traditionnellement, on utilise un **Libor Market Model (LMM)** calibré avec des
 - `Presentation_experiences.pdf` : présentation du projet.  
 - `PINN.ipynb` : implémentation d’un **Physics-Informed Neural Network** pour l’estimation inverse des paramètres du LMM (σ, ρ).  
 - `PIGAN.ipynb` : tentative d’implémentation d’un **Physics-Informed GAN** combinant contraintes de marché et adversarial learning.  
-- `GAN-2.ipynb` : implémentation d’un **GAN standard** pour générer des scénarios stochastiques.  
+- `GAN.ipynb` : implémentation d’un **GAN standard** pour générer des scénarios stochastiques.  
 - `resultsPINN.png`, `resultsPIGAN.png`, `resultsGSE.png`, `resultsGAN.png` : graphiques des résultats comparatifs.  
 
 ---
