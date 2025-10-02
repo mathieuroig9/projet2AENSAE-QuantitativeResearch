@@ -1,7 +1,7 @@
 # Génération de Scénarios de Taux d’Intérêt avec IA Générative
 
 ## 📌 Contexte
-Ce projet a été réalisé dans le cadre du StatApp à l’ENSAE en collaboration avec WTW (Quant Research).  
+Ce projet a été réalisé dans le cadre du StatApp à l’ENSAE en collaboration avec WTW.  
 L’objectif était d’explorer comment des **modèles d’IA générative** peuvent **compléter ou remplacer un GSE (Generateur de Scénarios Économiques)** pour produire des scénarios de taux d’intérêt forward conformes aux contraintes réglementaires et métiers.
 
 Les assureurs ont besoin de tels scénarios pour la gestion actif-passif, la solvabilité et le pilotage des risques.  
@@ -13,7 +13,7 @@ Traditionnellement, on utilise un **Libor Market Model (LMM)** calibré avec des
 ---
 
 ## 🏗️ Structure du projet
-- `Presentation_experiences.pdf` : présentation complète du projet (pages 7–13).  
+- `Presentation_experiences.pdf` : présentation du projet.  
 - `PINN.ipynb` : implémentation d’un **Physics-Informed Neural Network** pour l’estimation inverse des paramètres du LMM (σ, ρ).  
 - `PIGAN.ipynb` : tentative d’implémentation d’un **Physics-Informed GAN** combinant contraintes de marché et adversarial learning.  
 - `GAN-2.ipynb` : implémentation d’un **GAN standard** pour générer des scénarios stochastiques.  
@@ -29,7 +29,10 @@ Le modèle classique utilise le **Libor Market Model** pour simuler des trajecto
 - Utilisation de la dynamique lognormale avec corrélations imposées via décomposition de Cholesky.  
 - Génération de scénarios stochastiques sous mesure risque-neutre.  
 
-👉 Le GSE sert de **référence** : les modèles d’IA doivent approcher ses sorties.
+👉 Le GSE sert de **référence** : les modèles d’IA doivent approcher ses sorties. On cherche à produire des trajectoires qui ressemblent à :
+
+![Résultats GSE](resultsGSE.png)
+
 
 ### 2. GAN – Generative Adversarial Network
 - Générateur (MLP) et Discriminateur (LSTM).  
@@ -57,7 +60,7 @@ Le modèle classique utilise le **Libor Market Model** pour simuler des trajecto
 - **GSE** : trajectoires lisses et économiquement cohérentes.  
 - **GAN** : beaucoup de bruit, pas de structure financière claire.  
 - **PIGAN** : instable, mais parfois plus réaliste que le GAN.  
-- **PINN** : permet de retrouver des paramètres financiers exploitables → trajectoires crédibles.  
+- **PINN** : permet théoriquement de retrouver des paramètres financiers exploitables mais dans la pratique c'est plus difficile.  
 
 ![Résultats GSE](resultsGSE.png)
 
@@ -69,9 +72,4 @@ Le modèle classique utilise le **Libor Market Model** pour simuler des trajecto
 - Le **PINN** est la méthode la plus robuste, car il inverse le problème et permet d’extraire les paramètres financiers directement.  
 
 Ce projet ouvre la voie à une utilisation hybride :  
-➡️ utiliser les **IA génératives** pour compléter le GSE, et non le remplacer totalement.  
-
----
-
-## 👤 Auteur
-Projet réalisé dans le cadre du StatApp ENSAE – Quant Research chez WTW (2024–2025).  
+➡️ utiliser les **IA génératives** pour compléter le GSE, et non le remplacer totalement.   
