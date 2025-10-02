@@ -56,17 +56,7 @@ Le modèle classique utilise le **Libor Market Model** pour simuler des trajecto
 
 ---
 
-## 📊 Résultats comparatifs
-- **GSE** : trajectoires lisses et économiquement cohérentes.  
-- **GAN** : beaucoup de bruit, pas de structure financière claire.  
-- **PIGAN** : instable, mais parfois plus réaliste que le GAN.  
-- **PINN** : permet théoriquement de retrouver des paramètres financiers exploitables mais dans la pratique c'est plus difficile.  
-
-![Résultats GSE](resultsGSE.png)
-
----
-
-## 🚀 Conclusion
+## 🚀 Comparaisons et conclusion
 - Les **GANs purs** sont trop génériques et peu adaptés aux contraintes financières.  
 - Le **PIGAN** est prometteur, mais nécessite des calibrations poussées.  
 - Le **PINN** est la méthode la plus robuste, car il inverse le problème et permet d’extraire les paramètres financiers directement.  
