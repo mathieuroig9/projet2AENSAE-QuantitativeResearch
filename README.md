@@ -1,7 +1,7 @@
 # Génération de Scénarios de Taux d’Intérêt avec IA Générative
 
 ## 📌 Contexte
-Ce projet a été réalisé dans le cadre du StatApp à l’ENSAE en collaboration avec WTW.  
+Ce projet a été réalisé dans le cadre d'un projet de recherche à l’ENSAE sur l'année 2024-2025 en collaboration avec WTW.  
 L’objectif était d’explorer comment des **modèles d’IA générative** peuvent **compléter ou remplacer un GSE (Generateur de Scénarios Économiques)** pour produire des scénarios de taux d’intérêt forward conformes aux contraintes réglementaires et métiers.
 
 Les assureurs ont besoin de tels scénarios pour la gestion actif-passif, la solvabilité et le pilotage des risques.  
